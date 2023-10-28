@@ -1,0 +1,7 @@
+from sklearn import preprocessing
+label_encoder = preprocessing.LabelEncoder()
+input_classes=['Suzuki','ford','Suzuki','toyota','ford','bmw']
+label_encoder.fit(input_classes)
+print ("\nClass mapping :")
+for i, item in enumerate(label_encoder.classes_):
+    print (item,'-->', i)
